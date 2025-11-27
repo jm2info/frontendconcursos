@@ -1,0 +1,771 @@
+/* ========== HOME – TABLET (até 1024px) ========== */
+@media (max-width: 1024px) {
+
+  /* HEADER */
+  .header-content {
+    padding: 12px 24px;
+    gap: 20px;
+  }
+  
+
+.banner-container {
+    display: none !important;
+  }
+  .banner-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+  }
+
+  .banner-left h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .banner-right img,
+  .img-menina,
+  .menina-img {
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* ====== CONCURSOS — 2 COLUNAS ====== */
+  .cards {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;  /* 2 COLUNAS */
+    gap: 24px !important;
+    width: 100%;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* ===== ESTUDE DE GRAÇA — 2 EM CIMA + 1 EM BAIXO ===== */
+  .estude-right {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;  /* 2 colunas */
+    gap: 18px;
+  }
+
+  /* Professores sozinho na linha de baixo */
+  .materia-box:nth-child(3) {
+    grid-column: 1 / 3;    /* ocupa largura inteira */
+    justify-self: center;
+  }
+
+  /* ESCONDER FRASE no tablet */
+  .estude-subtexto {
+    display: none !important;
+  }
+
+}
+/* ========== HOME – MOBILE (até 600px) ========== */
+@media (max-width: 600px) {
+
+  /* ESCONDER BANNER NO MOBILE */
+  .banner-container {
+    display: none !important;
+  }
+
+  /* CONTAINER GERAL */
+  .container {
+    width: 92%;
+  }
+/* ===== AJUSTE DE ALTURA DA SEÇÃO ESTUDE (MOBILE 320px) ===== */
+
+/* sobe toda a seção */
+.estude {
+  padding-top: 6px !important;
+  margin-top: -12px !important;  /* sobe a faixa inteira */
+}
+
+/* sobe o botão verde */
+.estude .btn-dark,
+.estude button {
+  margin-top: -10px !important;
+  margin-bottom: 4px !important;
+}
+
+/* sobe os 3 cards: Português, Matemática, Professores */
+.estude-right {
+  margin-top: -12px !important;
+}
+
+/* ajusta a frase */
+.estude-subtexto {
+  margin-top: 6px !important;
+  padding: 0 4px 12px !important;
+  text-align: center !important;
+}
+  /* HEADER */
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 8px;
+  }
+
+  .logo {
+    max-height: 80px;
+    margin: 0;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .btn-orange {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* BUSCA */
+  .busca {
+    padding: 24px 0;
+  }
+
+  .busca-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .busca input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .busca .btn-orange {
+    width: 100%;
+  }
+
+  /* CONCURSOS – CARDS EM UMA COLUNA */
+  .concursos {
+    padding: 24px 0;
+    margin-top: 16px !important;
+    overflow: visible !important;     /* não corta nada */
+  }
+
+  .abas {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 20px 16px;
+  }
+
+  .ver-todos {
+    display: inline-block;
+    margin-top: 16px;
+  }
+
+  /* ====== ESTUDE DE GRAÇA (BOTÃO + CARDS + FRASE) ====== */
+
+  .estude {
+    padding-top: 16px !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* sobe o botão "Quero começar a estudar" */
+  .estude .btn-orange {
+    margin-top: 0 !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* sobe os 3 cards (Português, Matemática, Professores) */
+  .estude-right {
+    margin-top: 0 !important;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+ .materia-box {
+  width: 100% !important;
+  max-width: 260px !important;
+  margin: 0 auto; /* centraliza */
+}
+
+  /* garante espaço pra frase caber inteira */
+  .estude-subtexto {
+    margin-top: 10px !important;
+    padding: 0 8px 12px !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  /* NOTÍCIAS – 1 COLUNA */
+  .noticias {
+    padding: 24px 0;
+  }
+
+  .noticias-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .noticia-card {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-top-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 16px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+@media (max-width: 600px) {
+
+  /* forçar vertical */
+  main {
+    flex-direction: column !important;
+  }
+
+  /* esconder o lado da imagem */
+  main > div:nth-of-type(2) {
+    display: none !important;
+  }
+
+  /* lado esquerdo vira 100% */
+  main > div:nth-of-type(1) {
+    width: 100% !important;
+    padding: 24px 16px !important;
+    align-items: center !important;
+  }
+
+  /* form interno expande */
+  main form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* inputs */
+  main input {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* botões */
+  main button {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* título Entrar / Cadastrar */
+  main span {
+    max-width: 100% !important;
+  }
+
+  /* remover margin Right gigante do “Esqueci a senha” */
+  p[style*="Esqueci a senha"] {
+    margin-right: 0 !important;
+    text-align: right !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  main {
+    flex-direction: row !important;
+  }
+
+  /* lado esquerdo */
+  main > div:nth-of-type(1) {
+    width: 55% !important;
+    padding: 40px 24px !important;
+  }
+
+  /* lado direito */
+  main > div:nth-of-type(2) {
+    width: 45% !important;
+  }
+
+  /* inputs e botões */
+  main input, 
+  main button {
+    max-width: 420px !important;
+    width: 100% !important;
+  }
+}
+/* =====================================================
+   ÁREA RESTRITA DO CANDIDATO - MOBILE (até 768px)
+   ===================================================== */
+@media (max-width: 768px) {
+
+  /* evitar rolagem horizontal */
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* HEADER: logo, busca e avatar em 2 linhas */
+  .header .header-content {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 8px 0;
+    height: auto;
+  }
+
+  /* bloco da busca ocupando a linha toda */
+  .header .header-content > div:nth-child(2) {
+    order: 3;
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  /* avatar + nome sobe um pouco */
+  .header .header-content > div:last-child {
+    order: 2;
+  }
+
+  .header .header-content input[type="text"] {
+    max-width: 100% !important;
+  }
+
+  /* NAV logo abaixo do header */
+  .header + nav {
+    flex-wrap: wrap;
+    gap: 12px !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  .header + nav a {
+    flex: 1 1 30%;
+  }
+
+  /* CONTAINER geral da área do candidato (fundo azul claro) */
+  .header + nav + div {
+    padding: 0 16px 40px 16px !important;
+    min-height: calc(100vh - 230px) !important; /* empurra o footer pra baixo */
+    box-sizing: border-box;
+  }
+
+  /* faixa laranja do título da aba */
+  .header + nav + div > div:nth-child(1) {
+    height: auto !important;
+  }
+
+  .header + nav + div > div:nth-child(1) > div {
+    position: static !important;
+    left: 0 !important;
+    transform: none !important;
+    margin: 10px 0 !important;
+    text-align: center !important;
+  }
+
+  /* FRASE MOTIVACIONAL + MENU LATERAL → coluna */
+  .header + nav + div > div:nth-child(3) {
+    position: static !important;
+    margin-top: 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: stretch !important;
+  }
+
+  /* cartão da frase azul ocupa 100% */
+  .header + nav + div > div:nth-child(3) > div:first-child {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  /* menu lateral vira card logo abaixo, 100% */
+  .header + nav + div > div:nth-child(3) > div:last-child {
+    width: 100% !important;
+    margin-top: 0 !important;
+    border-radius: 12px !important;
+  }
+
+  .header + nav + div > div:nth-child(3) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* MINHA JORNADA – tudo em coluna */
+  .header + nav + div > div:nth-child(4) {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    margin: 16px 0 0 0 !important;
+    padding: 16px 0 24px 0 !important;
+  }
+
+  .header + nav + div > div:nth-child(4) > div {
+    width: 100% !important;
+  }
+
+  /* OPORTUNIDADES – lista primeiro, filtro depois */
+  .oportunidades-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .resultados-oportunidades {
+    order: 1 !important;
+  }
+
+  .filtro-oportunidades {
+    order: 2 !important;
+    margin-top: 20px !important;
+  }
+
+  /* PLAYER de vídeo sempre 100% da largura */
+  .header + nav + div div[style*="640px"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* FOOTER – encostar nas laterais, mas sem ficar fixo */
+  footer.footer {
+    width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: 0 !important;
+    padding: 30px 16px !important;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .footer-top-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer > div:nth-child(3) {
+    position: static !important;
+    margin-top: 12px !important;
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    position: static !important;
+    margin-top: 16px !important;
+    justify-content: center;
+  }
+}
+
+/* =====================================================
+   TABLET (769px a 1180px) – puxar um pouco pro menu e empurrar footer
+   ===================================================== */
+@media (min-width: 769px) and (max-width: 1180px) {
+
+  .header + nav + div {
+    min-height: calc(100vh - 240px) !important;
+    box-sizing: border-box;
+  }
+
+  .header + nav + div > div:nth-child(3) ~ div {
+    margin-left: 210px !important;
+    margin-right: 24px !important;
+  }
+
+  .tabela-e-filtro-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: center !important;
+  }
+
+  .filtro-oportunidades {
+    order: 1 !important;
+    margin-top: 20px !important;
+    margin-left: 0 !important;
+  }
+
+  .resultados-oportunidades {
+    order: 2 !important;
+    margin-top: 20px !important;
+  }
+}
+
+/* =====================================================
+   MODAL – centralizado até 1180px
+   ===================================================== */
+@media (max-width: 1180px) {
+  .modal-redefinir-senha,
+  div[style*="position: fixed"][style*="background: white"] {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+    width: 85% !important;
+    max-width: 400px !important;
+    z-index: 999999 !important;
+  }
+}
+/* =====================================================
+   ÁREA DO PROFESSOR - MOBILE (até 768px)
+   ===================================================== */
+@media (max-width: 768px) {
+
+  /* evitar rolagem horizontal */
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* BANNER ANIMADO – um pouco mais compacto no mobile */
+  .header + div {
+    height: 40px !important;
+  }
+
+  .header + div > div {
+    font-size: 16px !important;
+  }
+
+  /* CONTAINER FAIXA LARANJA + CARD AZUL
+     (é o 2º <div> depois do header na página do professor) */
+  .header + div + div {
+    position: static !important;
+    height: auto !important;
+    padding: 12px 16px !important;
+  }
+
+  /* Faixa laranja: centralizar texto e tirar padding gigante à esquerda */
+  .header + div + div > div:first-child {
+    padding-left: 0 !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 18px !important;
+  }
+
+  /* Card azul do professor: parar de flutuar, virar bloco 100% */
+  .header + div + div > div:nth-child(2) {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 12px !important;
+    border-top-right-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+  }
+
+  /* MENU LATERAL – vira bloco embaixo do card, largura toda */
+  .header + div + div + div {
+    width: 100% !important;
+    margin: 16px 0 0 0 !important;
+    box-sizing: border-box;
+  }
+
+  .header + div + div + div ul {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .header + div + div + div li {
+    width: 100% !important;
+  }
+
+  /* CONTEÚDO DAS ABAS (Meu ensino, Minhas aulas, Nova aula, Trilhas, Configurações)
+     Todos os <div> que vêm DEPOIS do menu lateral */
+  .header + div + div + div ~ div {
+    margin: 16px 0 0 0 !important;
+    padding: 16px !important;
+    margin-left: 0 !important;   /* mata marginLeft: 260px */
+    position: static !important; /* mata top: -580px etc. */
+    top: auto !important;
+  }
+
+  /* Títulos sem marginTop negativa no mobile */
+  .header + div + div + div ~ div h1 {
+    margin-top: 0 !important;
+  }
+
+  /* FORMULÁRIOS (Alterar senha, Perfil) ocupando 100% no mobile */
+  .header + div + div + div ~ div form {
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* GRID de 3 colunas de senha → 1 coluna no mobile */
+  .header + div + div + div ~ div form > div[style*="grid-template-columns"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* FOOTER do professor – diminuir o espaço e deixar mais natural no mobile */
+  footer.footer {
+    margin-top: 60px !important;   /* em vez de 200px no mobile */
+    padding-bottom: 50px !important;
+  }
+}
+
+/* =====================================================
+   ÁREA DO PROFESSOR - MOBILE PEQUENO (até 480px)
+   ===================================================== */
+@media (max-width: 480px) {
+
+  /* Corrige o bloco "Bem-vindo" que tinha margin-top: -490px */
+  .header + div + div + div ~ div div[style*="margin-top: -490px"] {
+    margin-top: 16px !important;
+  }
+
+  /* BLOCO DOS CARDS ESTATÍSTICOS (height: 200px) → vira coluna */
+  .header + div + div + div ~ div div[style*="height: 200px"] {
+    position: static !important;
+    height: auto !important;
+    margin-top: 16px !important;
+  }
+
+  .header + div + div + div ~ div div[style*="height: 200px"] > div {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    margin-left: 0 !important;
+  }
+
+  .header + div + div + div ~ div div[style*="height: 200px"] > div > div {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+/* =====================================================
+   ÁREA DO PROFESSOR - TABLET (769 a 1180px)
+   ===================================================== */
+@media (min-width: 769px) and (max-width: 1180px) {
+
+  /* 1) afastar o conteúdo (todas as abas) do menu lateral */
+  .header + div + div + div ~ div {
+    margin-left: 200px !important;   /* regula a distância do menu */
+    margin-right: 20px !important;
+    padding: 24px 16px !important;
+  }
+
+  /* 2) MEU ENSINO – zera a margem negativa do bloco "Bem vindo" */
+  /* (é o <div style={{ marginTop: '-490px' }}> ) */
+  div[style*="margin-top:-490px"] {
+    margin-top: 0 !important;
+  }
+
+  /* 3) CONTAINER DOS CARDS – deixa de ser caixinha fixa */
+  /* (é o <div style={{ position:'relative', height:'200px', marginTop:'110px' }}> ) */
+  div[style*="height:200px"][style*="margin-top:110px"] {
+    position: static !important;
+    height: auto !important;
+    margin-top: 24px !important;
+  }
+
+  /* 4) LINHA DOS CARDS – vira coluna EMPILHADA */
+  /* (é o <div style={{ position:'absolute', display:'flex', ... }}> interno) */
+  div[style*="height:200px"][style*="margin-top:110px"] > div {
+    position: static !important;
+    top: auto !important;
+    display: flex !important;
+    flex-direction: column !important;   /* EMPILHA UM EMBAIXO DO OUTRO */
+    align-items: center !important;
+    gap: 16px !important;
+    margin-left: 0 !important;
+  }
+
+  /* 5) Cada card ocupa 90% da largura, centralizado */
+  div[style*="height:200px"][style*="margin-top:110px"] > div > div {
+    width: 90% !important;
+    max-width: 360px !important;
+    height: auto !important;
+  }
+
+  /* 6) Botão "Enviar nova aula" também larguinho e centralizado */
+  div[style*="height:200px"][style*="margin-top:110px"] > div > div + button {
+    width: 90% !important;
+    max-width: 360px !important;
+    margin-top: 12px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
+  /* MEU ENSINO – força os 3 cards a ficarem EMPILHADOS no tablet */
+  div[style*="gap:40px"],
+  div[style*="gap: 40px"] {
+    display: flex !important;
+    flex-direction: column !important; /* um embaixo do outro */
+    align-items: center !important;
+    gap: 16px !important;
+    margin-left: 0 !important;
+  }
+
+  /* cada card larguinho e centralizado */
+  div[style*="gap:40px"] > div,
+  div[style*="gap: 40px"] > div {
+    width: 90% !important;
+    max-width: 360px !important;
+    height: auto !important;
+  }
+  /* desloca a coluna dos cards um pouco para a direita no tablet */
+  div[style*="gap:40px"],
+  div[style*="gap: 40px"] {
+    margin-left: 40px !important;  /* ajuste aqui! 20px, 30px, 50px... */
+  }
+}
+/* GARANTIR QUE SOMENTE A ABA ATIVA APAREÇA */
+.cards.hidden {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+/* ESCONDER A FRASE NO MOBILE E TABLET */
+@media (max-width: 1024px) {
+  .frase-login {
+    display: none !important;
+  }
+}
