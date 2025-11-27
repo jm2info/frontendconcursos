@@ -53,7 +53,7 @@ function resetCandidatoForm() {
   const handleCadastroCandidato = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const resposta = await fetch('http://localhost:3001/candidatos', {
+      const resposta = await fetch('https://backendconcursos.onrender.com/candidatos', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
